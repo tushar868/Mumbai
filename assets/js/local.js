@@ -1,6 +1,10 @@
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    const lineSelect = document.querySelector('select[name="line"]');
-    const routeSelect = document.querySelector('select[name="route_number"]');
+    const lineSelect = document.querySelector('select[name="local_line"]');
+    const routeSelect = document.querySelector('select[name="route_number_local"]');
   
     const routes = {
       harbour: [
@@ -33,6 +37,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-
-
-  
