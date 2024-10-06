@@ -116,6 +116,27 @@
       
                     <input type="number" name="time" aria-label="time" placeholder="Time of travel*" class="input-field">
                   </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="running_late" id="running-late" class="checkbox">
+                    <label for="running-late" class="label">
+                      Running Late
+                    </label>
+                  </div>
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Overcrowded
+                    </label>
+                  </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Other :
+                    </label>
+                  </div>
       
                   <textarea name="message" aria-label="message" placeholder="Describe your issues...*" required
                     class="input-field"></textarea>
@@ -163,9 +184,39 @@
                   </div>
       
                   <div class="input-wrapper">
-                    <input type="text" name="route_number" aria-label="route_number" placeholder="Route number*" class="input-field">
+                    <select name="line" aria-label="line" required class="input-field">
+                      <option value="" disabled selected>Select Line*</option>
+                      <option value="harbour">Harbour</option>
+                      <option value="central">Central</option>
+                      <option value="western">Western</option>
+                    </select>
+                
+                    <select name="route_number" aria-label="route_number" required class="input-field">
+                      <option value="" disabled selected>Select Route*</option>
+                    </select>
       
                     <input type="number" name="time" aria-label="time" placeholder="Time of travel*" class="input-field">
+                  </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="running_late" id="running-late" class="checkbox">
+                    <label for="running-late" class="label">
+                      Running Late
+                    </label>
+                  </div>
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Overcrowded
+                    </label>
+                  </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Other :
+                    </label>
                   </div>
       
                   <textarea name="message" aria-label="message" placeholder="Describe your issues...*" required
@@ -215,10 +266,42 @@
                   </div>
       
                   <div class="input-wrapper">
-                    <input type="text" name="route_number" aria-label="route_number" placeholder="Route number*" class="input-field">
-      
+                    <select name="metro_line" id="metro_line" required class="input-field">
+                      <option value="" disabled selected>Select Metro Line*</option>
+                      <option value="blue">Blue Line (1)</option>
+                      <option value="yellow">Yellow Line (2A)</option>
+                      <option value="red">Red Line (7)</option>
+                    </select>
+                  
+                    <select name="metro_route_number" id="metro_route_number" required class="input-field">
+                      <option value="" disabled selected>Select Metro Route*</option>
+                      <!-- Options will be dynamically populated based on the selected metro line -->
+                    </select>
+                  
                     <input type="number" name="time" aria-label="time" placeholder="Time of travel*" class="input-field">
                   </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="running_late" id="running-late" class="checkbox">
+                    <label for="running-late" class="label">
+                      Running Late
+                    </label>
+                  </div>
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Overcrowded
+                    </label>
+                  </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Other :
+                    </label>
+                  </div>
+                  
       
                   <textarea name="message" aria-label="message" placeholder="Describe your issues...*" required
                     class="input-field"></textarea>
@@ -267,9 +350,34 @@
                   </div>
       
                   <div class="input-wrapper">
-                    <input type="text" name="route_number" aria-label="route_number" placeholder="Route number*" class="input-field">
-      
+                    <select name="mono_route_number" aria-label="mono_route_number" required class="input-field">
+                      <option value="" disabled selected>Select Mono Rail Route*</option>
+                      <option value="101">Towards "Sant Gadge Maharaj Chowk"</option>
+                      <option value="102">Towards "Chembur"</option>
+                    </select>
+                
                     <input type="number" name="time" aria-label="time" placeholder="Time of travel*" class="input-field">
+                  </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="running_late" id="running-late" class="checkbox">
+                    <label for="running-late" class="label">
+                      Running Late
+                    </label>
+                  </div>
+                  
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Overcrowded
+                    </label>
+                  </div>
+
+                  <div class="checkbox-wrapper">
+                    <input type="checkbox" name="overcrowded" id="overcrowded" class="checkbox">
+                    <label for="overcrowded" class="label">
+                      Other :
+                    </label>
                   </div>
       
                   <textarea name="message" aria-label="message" placeholder="Describe your issues...*" required
@@ -508,6 +616,10 @@
     - custom js link
   -->
   <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/local.js" defer></script>
+  <script src="./assets/js/metro.js" defer></script>
+
+  
 
   <!-- 
     - ionicon link
