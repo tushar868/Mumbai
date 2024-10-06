@@ -661,7 +661,8 @@ textarea.input-field {
   margin-block-end: 15px;
 }
 
-.checkbox-wrapper .label { font-size: var(--fs-6); }
+.checkbox-wrapper .label { color: var(--gray-web);
+  font-size: var(--fs-4); }
 
 .contact-list {
   display: flex;
