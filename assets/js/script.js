@@ -77,3 +77,5 @@ const changeTab = function () {
 }
 
 addEventOnElement(tabBtns, "click", changeTab);
+
+
